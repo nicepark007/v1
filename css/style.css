@@ -1,0 +1,168 @@
+body {
+	margin:0;
+
+}
+
+div {
+	position:absolute;
+}
+
+#space {
+	width:1100px;
+	height:600px;
+	left:50%;
+	top:50%;
+	margin-left:-550px;
+	margin-top:-300px;
+	background-color:#000;
+	overflow:hidden;
+}
+#cstar {
+	position:relative;
+	width:130px;
+	height:130px;
+	border-radius:65px;
+	top:50%;
+	left:50%;
+	margin-top:-65px;
+	margin-left:-65px;
+	background-color:#522523;
+	background:url('../images/tx.png');
+	
+	
+
+}
+
+#custom {
+	width:820px;
+	height:420px;
+	left:50%;
+	top:50%;
+	margin-left:-410px;
+	margin-top:-210px;
+	background-color:#fff;
+}
+
+#close {
+	position:absolute;
+	margin-top:10px;
+	margin-left:785px;
+	width:23px;
+	height:23px;
+	font-size:10pt;
+	line-height:23px;
+	text-align:center;
+	font-weight:900;
+	color:white;
+	border-radius:12px;
+	background-color:#de3939;
+	background-image:url('../images/close.png');
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+#appear {
+	width:240px;
+	height:306px;
+	top:50%;
+	margin-left:35px;
+	margin-top:-168px;
+	background-color:#000;
+	border:solid #e0e0e0 15px;
+}
+
+#setting {
+	width:440px;
+	height:336px;
+	top:50%;
+	margin-top:-168px;
+	margin-left:330px;
+}
+
+#rangelist{
+	position:relative;
+	float:right;
+	margin-top:40px;
+
+}
+.range {
+	position:relative;
+	float:right;
+	width:320px;
+	margin-bottom:39px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background:#e5e5e5;
+    border-top:1px solid #a9a8a9;
+    border-radius:2px;
+    height:6px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:#fff;
+    height:13px;
+    width:38px;
+    border-radius:4px;
+    box-shadow:0 0 3px #666;
+}
+
+#rangelabel{
+	margin-left:37px;
+	text-align: right;
+	margin-top: 22px;
+	font-size:9pt;
+	line-height: 48px;
+}
+
+#btlist {
+	margin-top:306px;
+	margin-left:225px;
+	float:right;
+}
+
+.btstyle {
+	width:105px;
+	height:30px;
+	border:0;
+	background-color:#cdcdcd;
+	font-size:9pt;
+	font-weight:900;
+	color:#666;
+}
+
+#add:hover {
+	background-color:#dadada;
+}
+
+#reset {
+	background-color:#b2c2cd;
+}
+
+#reset:hover {
+	background-color:#bcccd7;
+}
+
+#newstar {
+	cursor:default;
+	height:25px;
+	width:80px;
+	line-height:27px;
+	text-align:center;
+	border:1px solid #fff;
+	border-radius:3px;
+	color:#fff;
+	font-size:9pt;
+	top:93%;
+	left:91%;
+	display:none;
+}
+
+
+@-webkit-keyframes firstmaking {
+	0%		{opacity:0; -webkit-transform:scale(0,0);}
+	40% 	{opacity:1;}
+	80% 	{-webkit-transform:scale(1.3,1.3);}
+	100% 	{opacity:1;  -webkit-transform:scale(1,1);}
+}
