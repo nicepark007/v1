@@ -1,6 +1,8 @@
 body {
 	margin:0;
-
+	background-color:#000;
+	cursor:default;
+	overflow:hidden;
 }
 
 div {
@@ -8,15 +10,11 @@ div {
 }
 
 #space {
-	width:1100px;
-	height:600px;
-	left:50%;
-	top:50%;
-	margin-left:-550px;
-	margin-top:-300px;
-	background-color:#000;
-	overflow:hidden;
+	background-image: url('../images/back.png');
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective: 300px center center;
 }
+
 #cstar {
 	position:relative;
 	width:130px;
@@ -28,17 +26,28 @@ div {
 	margin-left:-65px;
 	background-color:#522523;
 	background:url('../images/tx.png');
-	
-	
-
+	background-position: -650px 0px;
 }
 
+.star {
+	position:absolute;
+	width:130px;
+	height:130px;
+	border-radius:65px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective: 300px center center;
+/*	-webkit-animation : bgsize 1s infinite;*/
+}
+
+
+
 #custom {
-	width:820px;
+	width:500px;
 	height:420px;
+	border-radius:10px;
 	left:50%;
 	top:50%;
-	margin-left:-410px;
+	margin-left:-110px;
 	margin-top:-210px;
 	background-color:#fff;
 }
@@ -46,7 +55,7 @@ div {
 #close {
 	position:absolute;
 	margin-top:10px;
-	margin-left:785px;
+	margin-left:465px;
 	width:23px;
 	height:23px;
 	font-size:10pt;
@@ -65,10 +74,9 @@ div {
 	width:240px;
 	height:306px;
 	top:50%;
-	margin-left:35px;
+	margin-left:-300px;
 	margin-top:-168px;
-	background-color:#000;
-	border:solid #e0e0e0 15px;
+
 }
 
 #setting {
@@ -76,7 +84,7 @@ div {
 	height:336px;
 	top:50%;
 	margin-top:-168px;
-	margin-left:330px;
+	margin-left:10px;
 }
 
 #rangelist{
@@ -118,8 +126,7 @@ input[type='range']::-webkit-slider-thumb {
 
 #btlist {
 	margin-top:306px;
-	margin-left:225px;
-	float:right;
+	margin-left:115px;
 }
 
 .btstyle {
@@ -155,14 +162,35 @@ input[type='range']::-webkit-slider-thumb {
 	color:#fff;
 	font-size:9pt;
 	top:93%;
-	left:91%;
 	display:none;
 }
 
-
-@-webkit-keyframes firstmaking {
-	0%		{opacity:0; -webkit-transform:scale(0,0);}
-	40% 	{opacity:1;}
-	80% 	{-webkit-transform:scale(1.3,1.3);}
-	100% 	{opacity:1;  -webkit-transform:scale(1,1);}
+#randomstar {
+	cursor:default;
+	height:25px;
+	width:80px;
+	line-height:27px;
+	text-align:center;
+	border:1px solid #fff;
+	border-radius:3px;
+	color:#ddd;
+	font-size:9pt;
+	top:93%;
+	display:none;
 }
+
+#newstar:hover {
+	background-color:#fff;
+	color:#444;
+}
+
+#randomstar:hover {
+	background-color:#fff;
+	color:#444;
+}
+
+/*@-webkit-keyframes bgsize {
+	0% {background-size:130px 130px;}
+	50% {background-size:220px 220px;}
+	100% {background-size:130px 130px;}
+}*/
